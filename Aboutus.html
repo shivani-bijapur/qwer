@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus</title>
+</head>
+<body style="background-color: gray;">
+    <div  align="center">
+    <h1>
+        <span style="color: black;align-content: center;">About</span>
+        <span style="color: brown;"> Us</span>
+    
+      </h1>
+    <h3 style="align-content:center;"> What Makes Our Coffee Special?</h3>
+   
+    <img src ="about.png" alt="no pic"  width="300" height="200">
+    <p style="font-size: larger;"><b>Caffeine is the first thing that comes to mind when you think about coffee.<br> But coffee also contains antioxidants and other active substances that may<br> reduce internal inflammation and protect against disease, say nutrition <br>experts from Johns Hopkins University School of Medicine.</b></p>
+
+</div>
+<h2> You have to see the video</h2>
+
+
+
+    <button onclick="toggleVideo()" style="font-size:25px;border-radius:10px;">Click Video</button><br><br>
+    <video id="myVideo" width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <script>
+        function toggleVideo() {
+            var video = document.getElementById("myVideo");
+            if (video.style.display === "none") {
+                video.style.display = "block";
+            } else {
+                video.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

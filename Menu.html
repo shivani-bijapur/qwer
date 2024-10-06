@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+        .image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            column-gap: 5px; 
+            row-gap: 15px;
+        }
+
+        
+        .image-grid img {
+            width: 50%; 
+            height: auto; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            background-color: black;
+        }
+
+       
+        .image-grid img:hover {
+            transform: scale(1.05); 
+        }
+    </style>
+</head>
+<body style="background-color: gray;">
+    <p style="font-size: 50px; align-items: center;color: burlywood;margin-top: -1px">Menu</p>
+    <p style="color:burlywood; margin-top: -40px; ">---------------------------------------------------------------------------------------</p>
+    <div class="image-grid">
+        <img src="m1.png" alt="Image 1">
+        <img src="m2.png" alt="Image 2">
+        <img src="m3.png" alt="Image 3">
+        <img src="m4.png" alt="Image 4">
+        <img src="m5.png" alt="Image 1">
+        <img src="m6.png" alt="Image 1">
+    </div>
+</body>
+</html>
